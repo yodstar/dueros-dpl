@@ -1,0 +1,44 @@
+{
+    "type":"DPL",
+    "version":"2.0",
+    "duration": 30000,
+    "mainTemplate":{
+        "parameters":[
+            "payload"
+        ],
+        "items": [
+            {
+                "type": "Container",
+                "styles": {
+                    "flex": 1,
+                    "justify-content":"space-between"
+                },
+                "items": [
+                    {
+                        "type": "Image",
+                        "styles": {
+                            "position": "absolute",
+                            "left": "0dp",
+                            "top": "0dp",
+                            "scale-type": "centerCrop",
+                            "height": "100%",
+                            "width": "100%"
+                        },
+                        "props": {
+                            "src": "https://duerstatic.cdn.bcebos.com/swan%2Fdpl_demo%2Fcommon-bg.png"
+                        }
+                    },
+                    {
+                        "type": "Header",
+                        "componentId": "header",
+                        "props": {
+                            "title": "simple case",
+                            "sideIcon": "https://d2o906d8ln7ui1.cloudfront.net/images/cheeseskillicon.png",
+                            "sideText": "demo2.0"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}

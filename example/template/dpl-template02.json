@@ -1,0 +1,42 @@
+{
+    "type": "DPL",
+    "version": "2.0",
+    "duration": 120000,
+    "mainTemplate": {
+        "parameters": [
+            "payload"
+        ],
+        "items": [
+            {
+                "type": "Container",
+                "styles": {
+                    "flex": 1,
+                    "background-color": "#222"
+                },
+                "items": [
+                    {
+                        "type": "Image",
+                        "props": {
+                            "src": "http://duerstatic.cdn.bcebos.com/swan/square/square_bg.webp"
+                        },
+                        "styles": {
+                            "width": "100%",
+                            "height": "100%",
+                            "scale-type": "centerCrop"
+                        }
+                    }, {
+                        "type": "Text",
+                        "componentId": "target-text-compId",
+                        "props": {
+                            "text": "Hello World!"
+                        },
+                        "styles": {
+                            "font-size": "28dp",
+                            "color": "#fff"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}

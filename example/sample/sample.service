@@ -1,0 +1,12 @@
+[Unit]
+Description=DuerOS DPL Sample
+After=network.target
+
+[Service]
+Type=simple
+LimitNOFILE=1024000
+ExecStart=/usr/local/dueros/sample
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
