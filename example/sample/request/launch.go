@@ -1,12 +1,11 @@
 package request
 
 import (
-	dueros "github.com/dueros/bot-sdk-go/bot"
 	"github.com/dueros/bot-sdk-go/bot/model"
 	"github.com/yodstar/dueros-dpl/dpl"
 )
 
-func Launch(bot *dueros.Bot, request *model.LaunchRequest) {
+func Launch(bot *dpl.Bot, request *model.LaunchRequest) {
 	LOG.Debug("Launch")
 	bot.Response.Tell("欢迎使用，请说开始测试")
 	path := []string{

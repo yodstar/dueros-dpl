@@ -1,7 +1,7 @@
 package request
 
 import (
-	dueros "github.com/dueros/bot-sdk-go/bot"
+	"github.com/yodstar/dueros-dpl/dpl"
 	"github.com/yodstar/goutil/logger"
 
 	"sample/config"
@@ -12,7 +12,7 @@ var (
 	LOG  = logger.LOG
 )
 
-func Default(bot *dueros.Bot, request interface{}) {
+func Default(bot *dpl.Bot, request interface{}) {
 	LOG.Debug("Default")
 	
 	bot.Response.HoldOn()
