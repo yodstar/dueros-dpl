@@ -9,7 +9,7 @@ DPL(DuerOS Presentation Language) on bot-sdk-go
 import (
 	...
 
-	"github.com/zmrnet/dueros-dpl/dpl"
+	"github.com/yodstar/dueros-dpl/dpl"
 )
 
 
